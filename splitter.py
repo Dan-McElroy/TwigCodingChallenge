@@ -35,7 +35,6 @@ def split_array(target_array, number_of_subs):
     sub_length = -(-len(target_array) // number_of_subs)
        		   
     return [
-        target_array[i*sub_length : (i+1)*sub_length]
-        for i 
-        in range(number_of_subs)
+        target_array[i*sub_length : (i+1)*sub_length] # Include a slice of the original array
+        for i in range(number_of_subs) # For each sub-array
     ]
